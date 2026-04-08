@@ -1,4 +1,24 @@
+# Google, Bing and other search engines crawling directives
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
 
+# Crawl delay and request rate
+Crawl-delay: 1
+Request-rate: 30/1m
+
+# Sitemap locations
 Sitemap: https://cbusnotworking.com.au/sitemap.xml
+Sitemap: https://www.cbusnotworking.com.au/sitemap.xml
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
